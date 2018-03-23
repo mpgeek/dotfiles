@@ -1,5 +1,5 @@
 # My Dotfiles
-Based on @holman's [dotfiles](https://github.com/holman/dotfiles)).
+Based on @holman's [dotfiles](https://github.com/holman/dotfiles).
 
 ## Bootstrapping (Fresh Install)
 Just clone and run the bootstrap script:
