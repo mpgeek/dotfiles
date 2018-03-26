@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -o errexit
+
+# ACSF REST API ping.
+
+# Requires environment variables for API KEYS:
+# - ACSF_API_USER
+# - ACSF_API_KEY
+
+echo " ## Testing ACSF REST API connectivity."
+
+# Ping 01live.
+set -x
+curl 'https://www.entercom.acsitefactory.com/api/v1/ping' \
+    -u "$ACSF_API_USER:$ACSF_API_KEY"
+set +x
+echo " >> REST API test complete."

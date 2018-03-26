@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+set -o errexit
+
+# ACSF stack/site counter.
+# Uses the REST API to count sites.
+
+# Requires environment variables for API KEYS:
+# - ACSF_API_USER
+# - ACSF_API_KEY
+
+function getApiData()
+{
+  local __ENV=$1
+  local __QUERY=$2
+
+  curl 'https://www.'"$__ENV"'.acsitefactory.com/api/v1/'"$__QUERY" -su "$ACSF_API_USER:$ACSF_API_KEY"
+}
+
+function countStackSites() {
+  ENVS=( "entercom" "test-entercom" "dev-entercom" )
+  for ENV in "${ENVS[@]}"; do
+    echo "---------------------------------------"
+    echo ">> $ENV SITES:"
+    echo "---------------------------------------"
+    RESPONSE=$(getApiData "$ENV" "sites?limit=1")
+    COUNT=$(echo $RESPONSE | python -c "import json,sys;obj=json.load(sys.stdin);print obj['count'];")
+    echo ">>> $COUNT sites."
+
+    # Count number of sites on each stack.
+    TOTAL_S1=0
+    TOTAL_S2=0
+    QUERY_LIMIT=100
+    QUERY_COUNT=$((($COUNT+$QUERY_LIMIT-1)/$QUERY_LIMIT))
+
+    for PAGE in $(seq 1 $QUERY_COUNT); do
+      echo " ### PAGE 0$PAGE"
+      RESPONSE=$(getApiData "$ENV" "sites?limit=$QUERY_LIMIT&page=$PAGE")
+
+      COUNT_S1=$(echo $RESPONSE | grep -o '"stack_id":1' | wc -l)
+      #echo "COUNT_S1: $COUNT_S1"
+      if [[ $COUNT_S1 -gt 0 ]]; then
+        let TOTAL_S1=TOTAL_S1+COUNT_S1
+      fi
+
+      COUNT_S2=$(echo $RESPONSE | grep -o '"stack_id":2' | wc -l)
+      #echo "COUNT_S2: $COUNT_S2"
+      if [[ $COUNT_S2 -gt 0 ]]; then
+        let TOTAL_S2=TOTAL_S2+COUNT_S2
+      fi
+
+      let TOTAL=COUNT_S1+COUNT_S2
+      echo " >> Page $PAGE S1: $COUNT_S1"
+      echo " >> Page $PAGE S2: $COUNT_S2"
+      echo " >> TOTAL: $TOTAL"
+      echo ""
+    done
+
+    echo " ## $ENV Stack 01: $TOTAL_S1"
+    echo " ## $ENV Stack 02: $TOTAL_S2"
+    echo "---------------------------------------"
+    echo ""
+  done
+}
+
+countStackSites
