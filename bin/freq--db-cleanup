@@ -5,7 +5,7 @@ SITES_PATH="$HOME/projects/frequency-acsf/docroot/sites"
 for ITEM in $(find "$SITES_PATH" -mindepth 1 -maxdepth 1 -type d); do
   if [[ $ITEM = *frequency.local ]]; then
     echo " >> Removing old database exports from $ITEM."
-    if [ -f "$ITEM"/*.sql ]; then
+    if [ -f "$ITEM/*.sql" ]; then
       chmod 775 "$ITEM"/*.sql
     fi
     find "$ITEM" -mindepth 1 -maxdepth 1 -name '*.sql' | sort -r | tail -n +2 | xargs rm --
