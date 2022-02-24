@@ -10,6 +10,7 @@ cask 'visual-studio-code'
 # Packages (brew install)
 brew 'mas'
 brew 'stow'
+brew 'tree'
 
 # Mac App Store (mas)
 mas 'Xcode', id: 497799835
