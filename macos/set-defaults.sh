@@ -12,7 +12,7 @@
 ## --------------------------------------------------------------------------------
 
 ## Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+#defaults write -g ApplePressAndHoldEnabled -bool false
 
 ## --------------------------------------------------------------------------------
 ## Finder
@@ -23,7 +23,7 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 ## Show the ~/Library folder.
-chflags nohidden ~/Library
+#chflags nohidden ~/Library
 
 ## --------------------------------------------------------------------------------
 ## Dock, Dashboard, Hot Corners
@@ -54,11 +54,11 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 ## --------------------------------------------------------------------------------
 
 ## Hide Safari's bookmark bar.
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+#defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 ## Set up Safari for development.
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+#defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+#defaults write com.apple.Safari IncludeDevelopMenu -bool true
+#defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+#defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+#defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
