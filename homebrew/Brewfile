@@ -4,5 +4,15 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
-# Packages
+# Cask bundles (brew install --cask)
+cask 'visual-studio-code'
+
+# Packages (brew install)
+brew 'mas'
 brew 'stow'
+
+# Mac App Store (mas)
+mas 'Xcode', id: 497799835
+
+# Whalebrew packages (whalebrew install)
+# whalebrew "whalebrew/wget"

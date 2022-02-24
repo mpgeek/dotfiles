@@ -31,6 +31,6 @@ fi
 ## Install packages.
 ##
 
-brew tap homebrew/bundle
-brew bundle --file $DOTFILES/Brewfile
+echo_run 'brew tap homebrew/bundle'
+echo_run "brew bundle --file $DOTFILES/homebrew/Brewfile"
 
