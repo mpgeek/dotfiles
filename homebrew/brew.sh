@@ -6,8 +6,6 @@
 
 ## @TODO: move this to an env var file.
 export DOTFILES=$HOME/.dotfiles
-
-## Include common functions.
 source $DOTFILES/common.sh
 
 ##

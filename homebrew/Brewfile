@@ -13,7 +13,7 @@ brew 'stow'
 brew 'tree'
 
 # Mac App Store (mas)
-mas 'Xcode', id: 497799835
+#mas 'Xcode', id: 497799835 // weird errors with xcode, try it just manually for now.
 
 # Whalebrew packages (whalebrew install)
 # whalebrew "whalebrew/wget"
