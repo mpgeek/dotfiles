@@ -6,10 +6,9 @@
 
 ## @TODO: move this to an env var file.
 export DOTFILES=$HOME/.dotfiles
-export LIBPATH=$DOTFILES/_lib
 
 ## Include common functions.
-source $LIBPATH/functions.sh
+source $DOTFILES/common.sh
 
 ##
 ## Install or update Homebrew.
