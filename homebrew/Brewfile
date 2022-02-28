@@ -5,15 +5,16 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Cask bundles (brew install --cask)
+cask 'evernote'
 cask 'visual-studio-code'
+cask 'slack'
+cask 'zoom'
 
 # Packages (brew install)
-brew 'mas'
 brew 'stow'
 brew 'tree'
 
 # Mac App Store (mas)
-#mas 'Xcode', id: 497799835 // weird errors with xcode, try it just manually for now.
 
 # Whalebrew packages (whalebrew install)
 # whalebrew "whalebrew/wget"
