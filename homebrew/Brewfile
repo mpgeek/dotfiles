@@ -5,16 +5,17 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Cask bundles (brew install --cask)
+cask 'aroundm'
+cask 'cloudapp'
 cask 'evernote'
 cask 'visual-studio-code'
 cask 'slack'
 cask 'zoom'
 
 # Packages (brew install)
+brew 'mas'
 brew 'stow'
 brew 'tree'
 
-# Mac App Store (mas)
-
-# Whalebrew packages (whalebrew install)
-# whalebrew "whalebrew/wget"
+# Mac App Store (mas install id)
+mas 'Harvest', id: 506189836        ## ui auth
