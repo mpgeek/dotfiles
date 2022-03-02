@@ -53,8 +53,7 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 ## Safari
 ## --------------------------------------------------------------------------------
 
-## Hide Safari's bookmark bar.
-#defaults write com.apple.Safari ShowFavoritesBar -bool false
+defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 ## Set up Safari for development.
 #defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
