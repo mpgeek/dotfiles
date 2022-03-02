@@ -5,7 +5,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Cask bundles (brew install --cask)
-cask 'aroundm'
+cask 'around'
 cask 'cloudapp'
 cask 'evernote'
 cask 'visual-studio-code'
@@ -15,6 +15,7 @@ cask 'zoom'
 # Packages (brew install)
 brew 'mas'
 brew 'stow'
+brew 'telnet'
 brew 'tree'
 
 # Mac App Store (mas install id)
