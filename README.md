@@ -22,11 +22,9 @@ Set OS and mac-related config:
 
     $ ./macos/set-defaults.sh
 
-Get updates from the App Store.
+Get macos updates.
 
-    $ ./macos/update.sh
-
-Not yet sure if homebrew `mas` makes this obsolete or not.
+    $ ./macos/os-update.sh
 
 ## Homebrew
 
