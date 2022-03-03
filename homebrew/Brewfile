@@ -3,9 +3,10 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'romkatv/powerlevel10k'
 
 # Cask bundles (brew install --cask)
-cask 'around'
+#cask 'around' // didn't install anything?
 cask 'cloudapp'
 cask 'evernote'
 cask 'visual-studio-code'
@@ -14,6 +15,7 @@ cask 'zoom'
 
 # Packages (brew install)
 brew 'mas'
+brew 'powerlevel10k'
 brew 'stow'
 brew 'telnet'
 brew 'tree'
