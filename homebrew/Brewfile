@@ -9,16 +9,24 @@ tap 'romkatv/powerlevel10k'
 #cask 'around' // didn't install anything?
 cask 'cloudapp'
 cask 'evernote'
+cask 'font-hack-nerd-font'
 cask 'visual-studio-code'
 cask 'slack'
 cask 'zoom'
 
+
 # Packages (brew install)
+brew 'awscli'
 brew 'mas'
 brew 'powerlevel10k'
 brew 'stow'
 brew 'telnet'
+brew 'tfenv'
+brew 'tgenv'
 brew 'tree'
 
 # Mac App Store (mas install id)
-mas 'Harvest', id: 506189836        ## ui auth
+## First download has to be done with the UI, and 
+## not sure if these defs actually help with updates.
+mas 'Harvest', id: 506189836
+mas 'Kindle', id: 405399194
