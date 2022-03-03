@@ -8,7 +8,7 @@ A few things need to be installed manually.
 
 ### iTerm2
 
-Find it on the [website](https://iterm2.com/), move it to `Applications`.
+Find it on the [website](https://iterm2.com/), follow GUI dialog for initial install.
 
 ### XCode
 
@@ -18,13 +18,13 @@ This install was probalby initiated when installing iTerm2. If not use this:
 
 ## Mac OS
 
-Set OS and mac-related config:
-
-    $ ./macos/set-defaults.sh
-
 Get macos updates.
 
     $ ./macos/os-update.sh
+
+Set OS and mac-related config:
+
+    $ ./macos/set-defaults.sh
 
 ## Homebrew
 
