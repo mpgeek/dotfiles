@@ -35,3 +35,7 @@ Install and upate packages:
     $ ./homebrew/brew.sh
 
 This also works on fresh install. Follow the prompts to get `brew` working initially, then move the dotfiles to `stow`.
+
+## Package Install with Stow
+
+@TODO
