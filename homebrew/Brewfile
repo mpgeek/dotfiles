@@ -6,7 +6,6 @@ tap 'homebrew/bundle'
 tap 'romkatv/powerlevel10k'
 
 # Cask bundles (brew install --cask)
-#cask 'around' // didn't install anything?
 cask 'cloudapp'
 cask 'evernote'
 cask 'font-hack-nerd-font'
@@ -14,16 +13,20 @@ cask 'visual-studio-code'
 cask 'slack'
 cask 'zoom'
 
-
 # Packages (brew install)
 brew 'awscli'
 brew 'mas'
+brew 'podman'
 brew 'powerlevel10k'
+brew 'pwgen'
+brew 'pyenv'
+brew 'python'
 brew 'stow'
 brew 'telnet'
 brew 'tfenv'
 brew 'tgenv'
 brew 'tree'
+brew 'qemu'
 
 # Mac App Store (mas install id)
 ## First download has to be done with the UI, and 
