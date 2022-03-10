@@ -1,2 +1,6 @@
+alias docker='podman'
+alias docker-compose='podman-compose'
+alias pm='podman'
+alias pmc='podman-compose'
 alias tf='terraform'
 alias tg='terragrunt'
