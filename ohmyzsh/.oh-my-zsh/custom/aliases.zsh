@@ -1,5 +1,7 @@
 alias docker='podman'
 alias docker-compose='podman-compose'
+alias mk='microk8s'
+alias mkk='microk8s kubectl'
 alias pm='podman'
 alias pmc='podman-compose'
 alias tf='terraform'
