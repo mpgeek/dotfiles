@@ -4,11 +4,15 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'romkatv/powerlevel10k'
+tap 'ubuntu/microk8s'
 
 # Cask bundles (brew install --cask)
 cask 'cloudapp'
 cask 'evernote'
+cask 'google-chrome'
+cask 'firefox'
 cask 'font-hack-nerd-font'
+cask 'lens'
 cask 'visual-studio-code'
 cask 'slack'
 cask 'zoom'
@@ -16,17 +20,19 @@ cask 'zoom'
 # Packages (brew install)
 brew 'awscli'
 brew 'mas'
+brew 'microk8s'
 brew 'podman'
 brew 'powerlevel10k'
 brew 'pwgen'
 brew 'pyenv'
 brew 'python'
+brew 'qemu'
 brew 'stow'
 brew 'telnet'
 brew 'tfenv'
 brew 'tgenv'
 brew 'tree'
-brew 'qemu'
+
 
 # Mac App Store (mas install id)
 ## First download has to be done with the UI, and 
