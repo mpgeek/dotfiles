@@ -32,7 +32,7 @@ echo_run 'brew tap homebrew/bundle'
 echo_run "brew bundle --file $DOTFILES/homebrew/Brewfile"
 
 ## Python
-echo_run "pyenv global 3.10.2"
-echo_run "python3 -m pip install --upgrade pip"
-echo_run "pip3 install -r $DOTFILES/homebrew/pip-reqs.txt"
+#echo_run "pyenv global 3.10.2"
+#echo_run "python3 -m pip install --upgrade pip"
+#echo_run "pip3 install -r $DOTFILES/homebrew/pip-reqs.txt"
 
