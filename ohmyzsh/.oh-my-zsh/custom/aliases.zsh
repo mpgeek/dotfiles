@@ -1,5 +1,6 @@
 alias docker='podman'
 alias docker-compose='podman-compose'
+alias gcb='git rev-parse --abbrev-ref HEAD'
 alias mk='microk8s'
 alias mkk='microk8s kubectl'
 alias pm='podman'
