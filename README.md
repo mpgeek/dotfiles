@@ -1,6 +1,6 @@
 # Mac setup
 
-This repo contains a process and tooling for setting up my Mac-based working machine for devops.
+This repo contains a process and tooling for setting up my work Mac.
 
 ## Pre-Requisites
 
