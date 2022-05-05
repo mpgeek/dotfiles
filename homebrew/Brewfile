@@ -28,16 +28,20 @@ brew 'pwgen'
 brew 'pyenv'
 brew 'python'
 brew 'qemu'
+brew 'serverless'
 brew 'sops'
 brew 'stow'
 brew 'telnet'
 brew 'tfenv'
 brew 'tgenv'
 brew 'tree'
+brew 'webpack'
 
 
 # Mac App Store (mas install id)
-## First download has to be done with the UI, and 
+
+## First download has to be done with the UI, and
 ## not sure if these defs actually help with updates.
-mas 'Harvest', id: 506189836
-mas 'Kindle', id: 405399194
+
+#mas 'Harvest', id: 506189836
+#mas 'Kindle', id: 405399194
